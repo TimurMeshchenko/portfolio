@@ -34,6 +34,9 @@
         .grecaptcha-badge {
             visibility: hidden
         }
+        p {
+            margin: 0;
+        }
     </style>
     <style class="kevlar_global_styles" nonce="PDlLoFlb11wW_6HAAO0HIA">
         html {
@@ -136,20 +139,24 @@
 </head>
 
 <body dir="ltr">
+    <h1 style="color: white; text-align: center;">Проекты</h1>
     <div id="home-page-skeleton">
-        <div id="home-container-skeleton">
+        <div id="home-container-skeleton" style="border: 1px solid gray; border-radius: 20px;">
             <div id="home-container-media">
                 <div class="rich-grid-media-skeleton" style="flex-basis: 310px;">
                     <div class="video-details">
-                        <a href="#" style="display: flex;flex-direction: column;">
+                        <a href="https://TimurMeshchenko.com/store_with_payment" style="display: flex;flex-direction: column;">
                             <img src="media/img/img.jpg">
                         </a>
                     </div>
                 </div>
-                <a class="details" href="#"
-                    style="word-break: break-word;font-size: 1.9rem;font-weight: 600;overflow: hidden;text-overflow: ellipsis;white-space: normal;color: white;cursor: pointer;text-decoration: none;">
-                    abababcacawc
-                </a>
+                <div style="word-break: break-word;font-size: 1.9rem;font-weight: 600;overflow: hidden;text-overflow: ellipsis;white-space: normal;color: white;text-decoration: none; margin: 0;">
+                    <p class="details">
+                        Проект "store_with_payment"<br>
+                        Описание: интернет-магазин с платежной системой, интегрированной с использованием платежного сервиса Stripe.<br>
+                        Стек: Python, Django, PostgreSQL, JavaScript, Stripe, HTML, CSS3<br>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

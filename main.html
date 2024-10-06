@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html style="font-size: 10px;font-family: Arial;" lang="en" darker-dark-theme
     darker-dark-theme-deprecate dark system-icons typography typography-spacing>
-
 <head>
     <title>Timur Meshchenko</title>
     <link rel="icon" href="media/favicon.ico">
     <style class="global_styles" nonce="PDlLoFlb11wW_6HAAO0HIA">
         body {
             padding: 0;
-            margin: 0;
+            margin: 0
         }
 
         body.autoscroll {
@@ -33,9 +32,6 @@
 
         .grecaptcha-badge {
             visibility: hidden
-        }
-        p {
-            margin: 0;
         }
     </style>
     <style class="kevlar_global_styles" nonce="PDlLoFlb11wW_6HAAO0HIA">
@@ -87,6 +83,11 @@
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
         }
         @media only screen and (max-width: 600px) {
         #home-container-media {
@@ -97,9 +98,9 @@
         }
         #home-page-skeleton .rich-grid-media-skeleton {
         margin: 0;
-        -webkit-flex-basis: 310px;
-        flex-basis: 310px;
-        min-width: 45%;
+        -webkit-flex-basis: 500px;
+        flex-basis: 500px;
+        min-width: 20%;
         max-width: 500px;
         -webkit-box-flex: 1;
         -webkit-flex-grow: 1;
@@ -135,27 +136,96 @@
         display: -webkit-flex;
         display: flex;
         }
+        .description {
+            display: none;
+            position: absolute;
+            left: 595px;
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 1.9rem;
+            overflow: hidden;
+            color: #fff;
+            border: 1px solid #555555;
+            border-radius: 10px;            
+        }
+        .video-details:hover .description, .description:hover {
+            display: block;
+        }               
     </style>
 </head>
 
 <body dir="ltr">
     <h1 style="color: white; text-align: center;">Проекты</h1>
     <div id="home-page-skeleton">
-        <div id="home-container-skeleton" style="border: 1px solid gray; border-radius: 20px;">
+        <div id="home-container-skeleton">
             <div id="home-container-media">
-                <div class="rich-grid-media-skeleton" style="flex-basis: 310px;">
+                <div class="rich-grid-media-skeleton">
                     <div class="video-details">
                         <a href="https://TimurMeshchenko.com/store_with_payment" style="display: flex;flex-direction: column;">
                             <img src="media/img/img.jpg">
                         </a>
+                        <a class="details" href="/video_hosting/video/661ab4190f9f91a86aef634d"
+                            style="margin:15px 0;font-size:1.9rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:normal;color:#fff;cursor:pointer;text-decoration:none">
+                            социальная сеть-библиотека, предназначенная для публикации личных впечатлений и осуществления поиска комиксов с
+                            использованием разнообразных фильтров. Основана на фреймворке FastAPI.
+                        </a>
+                        <div class="description">
+                            <p>Стек: Python, PostgreSQL, Docker, FastAPI, Redis, CI/CD, RabbitMQ, SQLALchemy, JavaScript, asyncio, Pytest, aiohttp,
+                            HTML, Docker-compose, Pydantic, CSS3, Websockets, Swagger, Jinja2, smtplib, Ajax, requests, psycopg2, github-actions.                             
+                            </p>
+                            <div style="display: flex;">
+                                <p style="margin: 0;">Сайт:</p>
+                                <a style="
+                                color: #4885fb;
+                                padding-left: 5px;
+                                overflow: hidden;
+                            ">https://TimurMeshchenko.com/store_with_payment</a>
+                            </div>                            
+                            <div style="display: flex;">
+                                <p style="margin: 0;">Github:</p>
+                                <a style="
+                                color: #4885fb;
+                                padding-left: 5px;
+                                overflow: hidden;
+                            ">https://github.com/TimurMeshchenko/manga_site_fastapi</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div style="word-break: break-word;font-size: 1.9rem;font-weight: 600;overflow: hidden;text-overflow: ellipsis;white-space: normal;color: white;text-decoration: none; margin: 0;">
-                    <p class="details">
-                        Проект "store_with_payment"<br>
-                        Описание: интернет-магазин с платежной системой, интегрированной с использованием платежного сервиса Stripe.<br>
-                        Стек: Python, Django, PostgreSQL, JavaScript, Stripe, HTML, CSS3<br>
-                    </p>
+                <div class="rich-grid-media-skeleton">
+                    <div class="video-details">
+                        <a href="https://TimurMeshchenko.com/store_with_payment" style="display: flex;flex-direction: column;">
+                            <img src="media/img/img.jpg">
+                        </a>
+                        <a class="details" href="/video_hosting/video/661ab4190f9f91a86aef634d"
+                            style="margin:15px 0;font-size:1.9rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:normal;color:#fff;cursor:pointer;text-decoration:none">
+                            интернет-магазин с платежной системой Stripe.
+                        </a>
+                    </div>
+                </div>
+                <div class="rich-grid-media-skeleton">
+                    <div class="video-details">
+                        <a href="https://TimurMeshchenko.com/store_with_payment" style="display: flex;flex-direction: column;">
+                            <img src="media/img/img.jpg">
+                        </a>
+                        <a class="details" href="/video_hosting/video/661ab4190f9f91a86aef634d"
+                            style="margin:15px 0;font-size:1.9rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:normal;color:#fff;cursor:pointer;text-decoration:none">
+                            интернет-магазин с платежной системой Stripe.
+                        </a>
+                    </div>
+                </div>
+                <div class="rich-grid-media-skeleton">
+                    <div class="video-details">
+                        <a href="https://TimurMeshchenko.com/store_with_payment" style="display: flex;flex-direction: column;">
+                            <img src="media/img/img.jpg">
+                        </a>
+                        <a class="details" href="/video_hosting/video/661ab4190f9f91a86aef634d"
+                            style="margin:15px 0;font-size:1.9rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:normal;color:#fff;cursor:pointer;text-decoration:none">
+                            интернет-магазин с платежной системой Stripe.
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

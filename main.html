@@ -159,7 +159,7 @@
 
         .tag-div {
             margin: 0 5px 5px 0;
-            font-size: 14px;
+            font-size: 16px;
             border: 1px solid #575757;
             border-radius: 5px;
             padding: 8px;
@@ -179,33 +179,47 @@
 
         @media screen and (max-width: 750px) {
             .resume-main-block {
+                width: 100% !important;
                 margin-left: 0px !important;
             }
 
             .resume-blocks {
+                flex-direction: column;
+            }
+            
+            .resume-additional-block {
+                width: 100% !important;
+                order: 1;
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .company-name {
+                display: block !important;
+            }
+
+            .company-description {
                 display: block !important;
             }
         }
 
-        .telegram svg:hover {
-            width: 35px !important;
-            height: 35px !important;
-        }
-
-        .github svg:hover {
-            width: 35px !important;
-            height: 35px !important;
-        }
         .video-details img {
             max-height: 250px;
+        }
+
+        .contact-link {
+            padding-left: 5px;
+            width: calc(100% - 37px);
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body dir="ltr">
     <div class="resume" style="padding: 24px;">
-        <div class="resume-blocks" style="display: flex; flex-wrap: wrap; margin-top: 20px; font-size: 16px;">
-            <div class="resume-additional-block" style="width: 25%;">
+        <div class="resume-blocks" style="display: flex; flex-wrap: wrap; font-size: 16px;">
+            <div class="resume-additional-block" style="width: 20%; overflow: hidden;">
                 <div class="contact">
                     <h2>Контакты</h2>
                     <hr style="border: 1px solid #575757;">
@@ -230,7 +244,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <p style="padding-left: 5px;">@Meshchenko</p>
+                        <a class="contact-link" href="https://t.me/Meshchenko">https://t.me/Meshchenko</a>
                     </div>
                     <div class="mail" style="display: flex; align-items: center;">
                         <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
@@ -244,7 +258,7 @@
                                 </path>
                             </g>
                         </svg>
-                        <p style="padding-left: 5px;">timur_meshchenko@mail.ru</p>
+                        <p class="contact-link">timur_meshchenko@mail.ru</p>
                     </div>
                     <div class="whatsapp" style="display: flex; align-items: center;">
                         <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none"
@@ -273,11 +287,11 @@
                                 </defs>
                             </g>
                         </svg>
-                        <p style="padding-left: 5px;">+79964630650</p>
+                        <p class="contact-link">+79964630650</p>
                     </div>
                     <div class="github" style="display: flex; align-items: center; overflow: hidden;">
-                        <a href="https://github.com/TimurMeshchenko">
-                            <svg width="32px" height="32px" viewBox="0 0 20 20" version="1.1"
+                        <a href="https://t.me/Meshchenko">
+                            <svg width="28px" height="28px" viewBox="0 0 20 20" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 fill="#000000">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -299,12 +313,12 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="https://github.com/TimurMeshchenko" style="padding-left: 5px;">
+                        <a class="contact-link" href="https://github.com/TimurMeshchenko">
                             https://github.com/TimurMeshchenko
                         </a>
                     </div>
                 </div>
-                <div class="skills">
+                <div class="skills" style="margin-top: 5px;">
                     <h2>Навыки</h2>
                     <hr style="border: 1px solid #575757;">
                     <div class="tags-list">
@@ -315,12 +329,52 @@
                         </div>
                         <div class="tag-div">
                             <span class="tag-span">
+                                <span>Django</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>DRF</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>FastAPI</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>Flask</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
                                 <span>PostgreSQL</span>
                             </span>
                         </div>
                         <div class="tag-div">
                             <span class="tag-span">
-                                <span>Django</span>
+                                <span>MongoDB</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>Clickhouse</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>MySQL</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>Docker</span>
+                            </span>
+                        </div>
+                        <div class="tag-div">
+                            <span class="tag-span">
+                                <span>Kubernetes</span>
                             </span>
                         </div>
                         <div class="tag-div">
@@ -335,17 +389,7 @@
                         </div>
                         <div class="tag-div">
                             <span class="tag-span">
-                                <span>Docker</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
                                 <span>Linux</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
-                                <span>FastAPI</span>
                             </span>
                         </div>
                         <div class="tag-div">
@@ -370,27 +414,12 @@
                         </div>
                         <div class="tag-div">
                             <span class="tag-span">
-                                <span>MySQL</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
                                 <span>CI/CD</span>
                             </span>
                         </div>
                         <div class="tag-div">
                             <span class="tag-span">
                                 <span>SQLAlchemy</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
-                                <span>Flask</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
-                                <span>MongoDB</span>
                             </span>
                         </div>
                         <div class="tag-div">
@@ -405,22 +434,7 @@
                         </div>
                         <div class="tag-div">
                             <span class="tag-span">
-                                <span>Kubernetes</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
                                 <span>Kafka</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
-                                <span>Clickhouse</span>
-                            </span>
-                        </div>
-                        <div class="tag-div">
-                            <span class="tag-span">
-                                <span>DRF</span>
                             </span>
                         </div>
                         <div class="tag-div">
@@ -472,10 +486,10 @@
                     <p>Russian (Native)</p>
                 </div>
             </div>
-            <div class="resume-main-block" style="width: 70%; margin-left: 5%;">
+            <div class="resume-main-block" style="width: 77%; margin-left: 3%;">
                 <div class="resume-header">
                     <h1 style="font-size: 32px; margin: 0;">Тимур Мещенко</h1>
-                    <p style="font-size: 25px;">Python Backend Developer</p>
+                    <p style="font-size: 25px;">Python Developer</p>
                 </div>
                 <div class="experience" style="margin-top: 15px;">
                     <h2>Опыт работы 5 лет 2 месяца</h2>
@@ -483,76 +497,54 @@
                     <div class="companies">
                         <div class="company" style="font-size: 20px;">
                             <div class="company-name" style="display: flex; justify-content: space-between;">
-                                <p style="font-weight: 600;">Софтлайн (поставщик IT-решений и сервисов)</p>
-                                <p>Февраль 2023 - настоящее время</p>
+                                <p style="font-weight: 600; width: 82%;">ЛАНИТ (группа IT-компаний, предоставляющая IT-услуги)</p>
+                                <p style="width: 18%;">Декабрь 2021 — сейчас</p>
                             </div>
                             <div class="company-description"
                                 style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
-                                <p style="font-weight: 600;">Python Backend Developer</p>
-                                <p>1 год 8 месяцев</p>
+                                <p style="font-weight: 600; width: 82%;">Python Developer</p>
+                                <p style="width: 18%;">1 год</p>
                             </div>
-                            <p style="font-size: 18px;">
-                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Redis, RabbitMQ, Linux,
-                                SQLALchemy, Kubernetes.<br>
-                                • Спроектировал и реализовал с применением микросервисной архитектуры приложение на
-                                Django для расчета стоимости
+                            <p style="font-size: 18px; line-height: 25px;">
+                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Redis, Linux, MongoDB, Celery, SQLALchemy, Kubernetes, Kafka,
+                                ClickHouse, MySQL, Airflow.<br><br>
+                                • Спроектировал и разработал платформу для торговли на криптовалютной бирже. Ежедневно ею пользуются десятки тысяч
+                                пользователей.<br>
+                                • Спроектировал и реализовал новую версию личного кабинета и отчётности для крупного банка. Работа включала полную
+                                переработку системы в рамках масштабного рефакторинга.<br>
+                                • Разработал систему рекомендаций продуктов и услуг для крупного банка. Решение увеличило спрос на предлагаемые продукты
+                                и услуги на 10%.<br>
+                                • Разработал и внедрил систему аналитики и обработки данных для рекомендательного сервиса крупного банка. Использование
+                                Kafka и ClickHouse позволило существенно ускорить обработку больших объемов данных и повысить эффективность
+                                взаимодействия с базой данных в несколько раз.<br>
+                                • Спроектировал и реализовал с применением микросервисной архитектуры веб-приложение на Django для расчета стоимости
                                 услуг.<br>
-                                • Разработал интеграцию с помощью RabbitMQ для микросервисов по сбору, обработке,
-                                доставке заказов клиентов.<br>
-                                • Оптимизировал инфраструктуру приложения с использованием Kubernetes, внедрив
-                                автоматическое масштабирование подов,
-                                что<br>
-                                позволило снизить использование ресурсов на 25% и повысить отказоустойчивость.
+                                • Создал чат поддержки на базе ChatGPT для корпоративного сайта. Решение ускорило обработку пользовательских запросов,
+                                снизило нагрузку на службу поддержки и сократило расходы компании на 5%.
                             </p>
                         </div>
                         <div class="company" style="font-size: 20px; margin-top: 20px;">
                             <div class="company-name" style="display: flex; justify-content: space-between;">
-                                <p style="font-weight: 600;">БФТ (разработчик продуктов и решений для государственного
-                                    сектора и бизнеса)</p>
-                                <p>Август 2021 — Февраль 2023</p>
+                                <p style="font-weight: 600; width: 82%;">Форт Диалог (компания, специализирующаяся в области системной интеграции)</p>
+                                <p style="width: 18%;">Июль 2019 — Декабрь 2021</p>
                             </div>
-                            <div class="company-description"
-                                style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
-                                <p style="font-weight: 600;">Python Backend Developer</p>
-                                <p>1 год 7 месяцев</p>
+                            <div class="company-description" style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
+                                <p style="font-weight: 600; width: 82%;">Python Developer</p>
+                                <p style="width: 18%;">2 года 6 месяцев</p>
                             </div>
-                            <p style="font-size: 18px;">
-                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Flask, RabbitMQ, MongoDB,
-                                SQLALchemy, Kubernetes, Kafka,
-                                ClickHouse.<br>
-                                • Спроектировал и переписал с применением микросервисной архитектуры и фреймворка
-                                FastAPI веб-приложение компании.<br>
-                                • Увеличил производительность на 15% благодаря оптимизации запросов и индексов для
-                                PostgreSQL в сервисе интеграции с
-                                клиентами.<br>
-                                • Разработал и внедрил систему обработки и аналитики данных для сервиса рекомендаций
-                                продуктов, используя Kafka и
-                                ClickHouse, что позволило сократить время обработки больших объемов данных и
-                                взаимодействие с базой данных в несколько
-                                раз.
-                            </p>
-                        </div>
-                        <div class="company" style="font-size: 20px; margin-top: 20px;">
-                            <div class="company-name" style="display: flex; justify-content: space-between;">
-                                <p style="font-weight: 600;">ЛАНИТ (группа IT-компаний, предоставляющая IT-услуги)</p>
-                                <p>Август 2020 — Август 2021</p>
-                            </div>
-                            <div class="company-description"
-                                style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
-                                <p style="font-weight: 600;">Python Developer</p>
-                                <p>1 год</p>
-                            </div>
-                            <p style="font-size: 18px;">
-                                Стек: Python, PostgreSQL, Docker, FastAPI, Git, Redis, Linux, Celery, SQLALchemy, MySQL,
-                                Airflow.<br>
-                                • Оптимизировал получение часто запрашиваемых данных и сократил нагрузку на сервер на
-                                10% за счёт внедрения Redis в
-                                маркетплейсе компании.<br>
-                                • Разработал интеграцию с платформами, такими как Ozon, Wildberries, Яндекс Маркет,
-                                СберМегаМаркет, в приложении для
+                            <p style="font-size: 18px; line-height: 25px;">
+                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Flask, RabbitMQ, Celery, JavaScript.<br><br>
+
+                                • Реализовал закрытый корпоративный мессенджер. Проект обеспечил более безопасное и конфиденциальное общение внутри
+                                компании.<br>
+                                • Спроектировал и переписал с применением микросервисной архитектуры и фреймворка FastAPI веб-приложение компании.<br>
+                                • Разработал интеграцию с платформами, такими как Ozon, Wildberries, Яндекс Маркет, СберМегаМаркет, в приложении для
                                 обработки заказов клиентов.<br>
-                                • Обеспечил высокий уровень безопасности и производительности путем настройки серверов
-                                на Linux и веб-сервисов.
+                                • Интегрировал платёжные системы в маркетплейс. Реализация охватила Сбербанк, ВТБ, Т-Банк и Альфа-банк.<br>
+                                • Создал сервис для анализа эффективности разработчиков на основе данных из GitLab. Инструмент помог выявить слабые
+                                стороны команды и повысить её продуктивность на 25% благодаря устранению узких мест.<br>
+                                • Оптимизировал инфраструктуру маркетплейса с помощью Kubernetes, внедрив автоматическое масштабирование, что позволило
+                                снизить потребление ресурсов на 30% и значительно улучшить отказоустойчивость системы.
                             </p>
                         </div>
                         <div>

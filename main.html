@@ -492,7 +492,7 @@
                     <p style="font-size: 25px;">Python Developer</p>
                 </div>
                 <div class="experience" style="margin-top: 15px;">
-                    <h2>Опыт работы 5 лет 2 месяца</h2>
+                    <h2 class="total-experience"></h2>
                     <hr style="border: 1px solid black;">
                     <div class="companies">
                         <div class="company" style="font-size: 20px;">
@@ -503,7 +503,7 @@
                             <div class="company-description"
                                 style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
                                 <p style="font-weight: 600; width: 82%;">Python Developer</p>
-                                <p style="width: 18%;">1 год</p>
+                                <p class="current-job-experience" style="width: 18%;"></p>
                             </div>
                             <p style="font-size: 18px; line-height: 25px;">
                                 Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Redis, Linux, MongoDB, Celery, SQLALchemy, Kubernetes, Kafka,
@@ -1408,6 +1408,27 @@
             </div>
         </div>
     </div>
+<p id="timePassed"></p>
+    <script>
+        // JavaScript to calculate the years and months since December 2021
+        function calculate_passed_times(startDateStr) {
+            const startDate = new Date(startDateStr);
+            const currentDate = new Date();
+    
+            const yearsDiff = currentDate.getFullYear() - startDate.getFullYear();
+            const monthsDiff = currentDate.getMonth() - startDate.getMonth();
+    
+            const totalYears = monthsDiff < 0 ? yearsDiff - 1 : yearsDiff;
+            const totalMonths = monthsDiff < 0 ? 12 + monthsDiff : monthsDiff;
+    
+            const result = `${totalYears} years ${totalMonths} months`;
+            
+            return result;
+        }
+
+        document.querySelector('.current-job-experience').textContent = calculate_passed_times('2021-12-01');
+        document.querySelector('.total-experience').textContent = `Опыт работы ${calculate_passed_times('2019-07-01')}`;
+    </script>
 </body>
 
 </html>

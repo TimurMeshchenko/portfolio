@@ -204,6 +204,18 @@
             }
         }
 
+        @media screen and (max-width: 950px) {
+            .contact {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .contact {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+        }
+
         .video-details img {
             max-height: 250px;
         }
@@ -218,15 +230,13 @@
 
 <body dir="ltr">
     <div class="resume" style="padding: 24px;">
-        <div class="resume-blocks" style="display: flex; flex-wrap: wrap; font-size: 16px;">
-            <div class="resume-additional-block" style="width: 20%; overflow: hidden;">
-                <div class="contact">
-                    <h2>Контакты</h2>
-                    <hr style="border: 1px solid #575757;">
-                    <div class="telegram" style="display: flex; align-items: center;">
+        <div class="resume-header">
+            <h1 style="font-size: 32px; margin: 0;">Тимур Мещенко</h1>
+            <p style="font-size: 25px; color: #4287f5";>Python Developer</p>
+            <div class="contact" style="display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 5px; font-size: 16px;">
+                <div class="telegram" style="display: flex; align-items: center;">
                         <a href="https://t.me/Meshchenko">
-                            <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -245,24 +255,30 @@
                             </svg>
                         </a>
                         <a class="contact-link" href="https://t.me/Meshchenko">https://t.me/Meshchenko</a>
-                    </div>
-                    <div class="mail" style="display: flex; align-items: center;">
-                        <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="linkedin" style="display: flex; align-items: center; overflow: hidden;">
+                    <a href="#">
+                        <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
+                                <rect x="2" y="2" width="28" height="28" rx="14" fill="#1275B1"></rect>
                                 <path
-                                    d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
-                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
+                                    d="M12.6186 9.69215C12.6186 10.6267 11.8085 11.3843 10.8093 11.3843C9.81004 11.3843 9 10.6267 9 9.69215C9 8.7576 9.81004 8 10.8093 8C11.8085 8 12.6186 8.7576 12.6186 9.69215Z"
+                                    fill="white"></path>
+                                <path d="M9.24742 12.6281H12.3402V22H9.24742V12.6281Z" fill="white"></path>
+                                <path
+                                    d="M17.3196 12.6281H14.2268V22H17.3196C17.3196 22 17.3196 19.0496 17.3196 17.2049C17.3196 16.0976 17.6977 14.9855 19.2062 14.9855C20.911 14.9855 20.9008 16.4345 20.8928 17.5571C20.8824 19.0244 20.9072 20.5219 20.9072 22H24V17.0537C23.9738 13.8954 23.1508 12.4401 20.4433 12.4401C18.8354 12.4401 17.8387 13.1701 17.3196 13.8305V12.6281Z"
+                                    fill="white"></path>
                             </g>
                         </svg>
-                        <p class="contact-link">timur_meshchenko@mail.ru</p>
-                    </div>
-                    <div class="whatsapp" style="display: flex; align-items: center;">
-                        <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                    </a>
+                    <a class="contact-link" href="#">
+                        https://www.linkedin.com/
+                    </a>
+                </div>
+                <div class="whatsapp" style="display: flex; align-items: center;">
+                        <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -288,12 +304,24 @@
                             </g>
                         </svg>
                         <p class="contact-link">+79964630650</p>
-                    </div>
-                    <div class="github" style="display: flex; align-items: center; overflow: hidden;">
-                        <a href="https://t.me/Meshchenko">
-                            <svg width="28px" height="28px" viewBox="0 0 20 20" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                fill="#000000">
+                </div>
+                <div class="mail" style="display: flex; align-items: center;">
+                    <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
+                    <p class="contact-link">timur_meshchenko@mail.ru</p>
+                </div>
+                <div class="github" style="display: flex; align-items: center; overflow: hidden;">
+                        <a href="https://github.com/TimurMeshchenko">
+                            <svg width="28px" height="28px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -301,8 +329,7 @@
                                     <desc>Created with Sketch.</desc>
                                     <defs> </defs>
                                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
-                                            fill="#000000">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
                                             <g id="icons" transform="translate(56.000000, 160.000000)">
                                                 <path
                                                     d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
@@ -316,11 +343,186 @@
                         <a class="contact-link" href="https://github.com/TimurMeshchenko">
                             https://github.com/TimurMeshchenko
                         </a>
+                </div>
+                <div class="location" style="display: flex; align-items: center; overflow: hidden;">
+                    <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path
+                                d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                        Москва
+                </div>
+            </div>
+        </div>
+        <div class="resume-blocks" style="display: flex; font-size: 16px; margin-top: 5px;">
+            <div class="resume-main-block" style="width: 80%; margin-right: 3%;">
+                <div class="experience">
+                    <h2 class="total-experience"></h2>
+                    <hr style="border: 2px solid black;">
+                    <div class="companies">
+                        <div class="company" style="font-size: 20px;">
+                            <p style="font-weight: 600;">Python Developer</p>
+                            <p style="font-weight: 600; margin-top: 5px; color: #4287f5">ЛАНИТ (группа IT-компаний, предоставляющая IT-услуги)</p>
+                            <div class="company-description" style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
+                                <div class="job-experience" style="display: flex; align-items: center;">
+                                    <div class="job-date" style="display: flex; align-items: center;">
+                                        <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                                                    stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                            </g>
+                                        </svg>
+                                        <p style="padding-left: 5px;">Декабрь 2021 — сейчас</p>
+                                    </div>
+                                    <p class="current-job-experience" style="padding-left: 5px;"></p>
+                                </div>
+                            <div class="location" style="display: flex; align-items: center; overflow: hidden;">
+                                <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                Москва
+                            </div>
+                            </div>
+                            <p style="font-size: 18px; line-height: 25px;">
+                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Redis, Linux, MongoDB, Celery, SQLALchemy, Kubernetes, Kafka,
+                                ClickHouse, MySQL, Airflow.<br><br>
+                                • Спроектировал и разработал платформу для торговли на криптовалютной бирже. Ежедневно ею пользуются десятки тысяч
+                                пользователей.<br>
+                                • Спроектировал и реализовал новую версию личного кабинета и отчётности для крупного банка. Работа включала полную
+                                переработку системы в рамках масштабного рефакторинга.<br>
+                                • Разработал систему рекомендаций продуктов и услуг для крупного банка. Решение увеличило спрос на предлагаемые продукты
+                                и услуги на 10%.<br>
+                                • Разработал и внедрил систему аналитики и обработки данных для рекомендательного сервиса крупного банка. Использование
+                                Kafka и ClickHouse позволило существенно ускорить обработку больших объемов данных и повысить эффективность
+                                взаимодействия с базой данных в несколько раз.<br>
+                                • Спроектировал и реализовал с применением микросервисной архитектуры веб-приложение на Django для расчета стоимости
+                                услуг.<br>
+                                • Создал чат поддержки на базе ChatGPT для корпоративного сайта. Решение ускорило обработку пользовательских запросов,
+                                снизило нагрузку на службу поддержки и сократило расходы компании на 5%.
+                            </p>
+                        </div>
+                        <div class="company" style="font-size: 20px; margin-top: 20px;">
+                            <p style="font-weight: 600;">Python Developer</p>
+                            <p style="font-weight: 600; margin-top: 5px; color: #4287f5">Форт Диалог (компания, специализирующаяся в области системной интеграции)</p>
+
+                            <div class="company-description" style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
+                                <div class="job-experience" style="display: flex; align-items: center;">
+                                    <div class="job-date" style="display: flex; align-items: center;">
+                                        <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                                                    stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                            </g>
+                                        </svg>
+                                        <p style="padding-left: 5px;">Июль 2019 — Декабрь 2021</p>
+                                    </div>
+                                    <p style="padding-left: 5px;">(2 года 6 месяцев)</p>
+                                </div>
+                                <div class="location" style="display: flex; align-items: center; overflow: hidden;">
+                                    <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path
+                                                d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                    Москва
+                                </div>
+                            </div>
+                            <p style="font-size: 18px; line-height: 25px;">
+                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Flask, RabbitMQ, Celery, JavaScript.<br><br>
+
+                                • Реализовал закрытый корпоративный мессенджер. Проект обеспечил более безопасное и конфиденциальное общение внутри
+                                компании.<br>
+                                • Спроектировал и переписал с применением микросервисной архитектуры и фреймворка FastAPI веб-приложение компании.<br>
+                                • Разработал интеграцию с платформами, такими как Ozon, Wildberries, Яндекс Маркет, СберМегаМаркет, в приложении для
+                                обработки заказов клиентов.<br>
+                                • Интегрировал платёжные системы в маркетплейс. Реализация охватила Сбербанк, ВТБ, Т-Банк и Альфа-банк.<br>
+                                • Создал сервис для анализа эффективности разработчиков на основе данных из GitLab. Инструмент помог выявить слабые
+                                стороны команды и повысить её продуктивность на 25% благодаря устранению узких мест.<br>
+                                • Оптимизировал инфраструктуру маркетплейса с помощью Kubernetes, внедрив автоматическое масштабирование, что позволило
+                                снизить потребление ресурсов на 30% и значительно улучшить отказоустойчивость системы.
+                            </p>
+                        </div>
+                        <div>
+                        </div>
                     </div>
                 </div>
-                <div class="skills" style="margin-top: 5px;">
+            </div>
+            <div class="resume-additional-block" style="width: 20%; overflow: hidden;">
+                <div class="education">
+                    <h2>Обо мне</h2>
+                    <hr style="border: 2px solid black;">
+                    <p>Senior Python Developer with 5.5+ years of experience in designing, developing, and deploying scalable and efficient
+                    software solutions. My expertise includes backend development using Django, FastAPI, and Flask frameworks, API design,
+                    and working with databases such as PostgreSQL, MongoDB, and ClickHouse.</p>
+                </div>                
+                <div class="education">
+                    <h2>Образование</h2>
+                    <hr style="border: 2px solid black;">
+                    <p>Bachelor of Science</p>
+                    <p>Information systems and technologies</p>
+                    <p style="color: #4287f5;">Moscow Technical University</p>
+                    <div class="job-experience" style="display: flex; align-items: center;">
+                        <div class="job-date" style="display: flex; align-items: center;">
+                            <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                                        stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                </g>
+                            </svg>
+                            <p style="padding-left: 5px;">2018 — 2022</p>
+                        </div>
+                    </div>
+                    <div class="location" style="display: flex; align-items: center; overflow: hidden;">
+                        <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                        Москва
+                    </div>
+                </div>
+                <div class="skills">
                     <h2>Навыки</h2>
-                    <hr style="border: 1px solid #575757;">
+                    <hr style="border: 2px solid black;">
                     <div class="tags-list">
                         <div class="tag-div">
                             <span class="tag-span">
@@ -481,75 +683,9 @@
                 </div>
                 <div class="language">
                     <h2>Языки</h2>
-                    <hr style="border: 1px solid #575757;">
-                    <p>English (B1)</p>
+                    <hr style="border: 2px solid black;">
+                    <p>English (B2)</p>
                     <p>Russian (Native)</p>
-                </div>
-            </div>
-            <div class="resume-main-block" style="width: 77%; margin-left: 3%;">
-                <div class="resume-header">
-                    <h1 style="font-size: 32px; margin: 0;">Тимур Мещенко</h1>
-                    <p style="font-size: 25px;">Python Developer</p>
-                </div>
-                <div class="experience" style="margin-top: 15px;">
-                    <h2 class="total-experience"></h2>
-                    <hr style="border: 1px solid black;">
-                    <div class="companies">
-                        <div class="company" style="font-size: 20px;">
-                            <div class="company-name" style="display: flex; justify-content: space-between;">
-                                <p style="font-weight: 600; width: 82%;">ЛАНИТ (группа IT-компаний, предоставляющая IT-услуги)</p>
-                                <p style="width: 18%;">Декабрь 2021 — сейчас</p>
-                            </div>
-                            <div class="company-description"
-                                style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
-                                <p style="font-weight: 600; width: 82%;">Python Developer</p>
-                                <p class="current-job-experience" style="width: 18%;"></p>
-                            </div>
-                            <p style="font-size: 18px; line-height: 25px;">
-                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Redis, Linux, MongoDB, Celery, SQLALchemy, Kubernetes, Kafka,
-                                ClickHouse, MySQL, Airflow.<br><br>
-                                • Спроектировал и разработал платформу для торговли на криптовалютной бирже. Ежедневно ею пользуются десятки тысяч
-                                пользователей.<br>
-                                • Спроектировал и реализовал новую версию личного кабинета и отчётности для крупного банка. Работа включала полную
-                                переработку системы в рамках масштабного рефакторинга.<br>
-                                • Разработал систему рекомендаций продуктов и услуг для крупного банка. Решение увеличило спрос на предлагаемые продукты
-                                и услуги на 10%.<br>
-                                • Разработал и внедрил систему аналитики и обработки данных для рекомендательного сервиса крупного банка. Использование
-                                Kafka и ClickHouse позволило существенно ускорить обработку больших объемов данных и повысить эффективность
-                                взаимодействия с базой данных в несколько раз.<br>
-                                • Спроектировал и реализовал с применением микросервисной архитектуры веб-приложение на Django для расчета стоимости
-                                услуг.<br>
-                                • Создал чат поддержки на базе ChatGPT для корпоративного сайта. Решение ускорило обработку пользовательских запросов,
-                                снизило нагрузку на службу поддержки и сократило расходы компании на 5%.
-                            </p>
-                        </div>
-                        <div class="company" style="font-size: 20px; margin-top: 20px;">
-                            <div class="company-name" style="display: flex; justify-content: space-between;">
-                                <p style="font-weight: 600; width: 82%;">Форт Диалог (компания, специализирующаяся в области системной интеграции)</p>
-                                <p style="width: 18%;">Июль 2019 — Декабрь 2021</p>
-                            </div>
-                            <div class="company-description" style="display: flex; justify-content: space-between; margin: 5px 0px 5px 0px;">
-                                <p style="font-weight: 600; width: 82%;">Python Developer</p>
-                                <p style="width: 18%;">2 года 6 месяцев</p>
-                            </div>
-                            <p style="font-size: 18px; line-height: 25px;">
-                                Стек: Python, Django, PostgreSQL, Docker, FastAPI, Git, Flask, RabbitMQ, Celery, JavaScript.<br><br>
-
-                                • Реализовал закрытый корпоративный мессенджер. Проект обеспечил более безопасное и конфиденциальное общение внутри
-                                компании.<br>
-                                • Спроектировал и переписал с применением микросервисной архитектуры и фреймворка FastAPI веб-приложение компании.<br>
-                                • Разработал интеграцию с платформами, такими как Ozon, Wildberries, Яндекс Маркет, СберМегаМаркет, в приложении для
-                                обработки заказов клиентов.<br>
-                                • Интегрировал платёжные системы в маркетплейс. Реализация охватила Сбербанк, ВТБ, Т-Банк и Альфа-банк.<br>
-                                • Создал сервис для анализа эффективности разработчиков на основе данных из GitLab. Инструмент помог выявить слабые
-                                стороны команды и повысить её продуктивность на 25% благодаря устранению узких мест.<br>
-                                • Оптимизировал инфраструктуру маркетплейса с помощью Kubernetes, внедрив автоматическое масштабирование, что позволило
-                                снизить потребление ресурсов на 30% и значительно улучшить отказоустойчивость системы.
-                            </p>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1426,7 +1562,7 @@
             return result;
         }
 
-        document.querySelector('.current-job-experience').textContent = calculate_passed_times('2021-12-01');
+        document.querySelector('.current-job-experience').textContent = `(${calculate_passed_times('2021-12-01')})`;
         document.querySelector('.total-experience').textContent = `Опыт работы ${calculate_passed_times('2019-07-01')}`;
     </script>
 </body>
